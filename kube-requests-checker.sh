@@ -31,7 +31,7 @@ while true; do
     -h|--help)
       cat << USAGE
 
-kube-requests-checker - Show containers without requests set in a Kubernetes cluster
+kube-requests-checker - Show containers without requests set for CPU, Memory, or both, in a Kubernetes cluster
 
 Usage: ${CLI_NAME} <options>
 
