@@ -87,7 +87,7 @@ else
     if [ "${LEVEL}" = "" ] || [ "${LEVEL}" = "controller" ]; then
         LEVEL="controller"
     else
-       echo "Level '${LEVEL}' is not valid. Must be 'pod' or 'controller'."
+       echo "Invalid option: '${LEVEL}' is not valid. Must be 'pod' or 'controller'."
        exit 1
     fi
     json=$(kubectl get deployments,daemonsets,statefulset,jobs ${NAMESPACE} ${EXCLUSIONS} \
