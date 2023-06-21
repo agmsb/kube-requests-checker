@@ -1,6 +1,21 @@
 # kube-requests-checker
 
+kube-requests-checker - Show containers without requests set for CPU, Memory, or both, in a Kubernetes cluster
+
+## Requirements
+
+* kubectl
+* jq
+  
 ## Usage
+
+Run:
+
+```
+./kube-requests-checker.sh -h
+```
+
+Output:
 
 ```
 kube-requests-checker - Show containers without requests set for CPU, Memory, or both, in a Kubernetes cluster
